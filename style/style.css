@@ -1,0 +1,100 @@
+*{ 
+    box-sizing: border-box;
+margin: 0;
+
+}
+body{
+    background: url('https://i.blogs.es/38b7ad/130420-oriend/1366_2000.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-family: helvetica;
+    background-attachment: fixed;
+    
+
+}
+nav{background-color:rgba(156,166, 199, 0.112) ;
+width: 100%;
+
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.button a{
+    background-color: transparent;
+    text-decoration:none;
+    color: white;
+    display: block;
+    padding: 15px 50px;
+    
+}
+.menu .button{
+    display: inline-block;
+}
+.lista-r{
+    float: right;
+}
+.button
+ a:hover{
+    background-color: rgb(132, 0, 247);
+}
+main{
+    text-align: center;
+
+}
+img{
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+}
+p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgba(72, 7, 151, 0.6);
+}
+label{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+#textarea{
+    border: 0;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgba(72, 7, 151, 0.6);
+    color: white;
+}
+button[type="submit"]{
+    background:rgba(232, 196, 129, 0.76) ;
+    color :white;
+    padding: 10px;
+    font-family: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+input::placeholder{
+    color:white;
+}
+input:focus{
+    outline: none;
+    background-color: rgba(53, 0, 117, 0.876);
+}
