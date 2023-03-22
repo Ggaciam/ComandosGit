@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>informacion</title>
     <link rel="stylesheet" href="./style/style2.css">
 </head>
 <body>
@@ -18,20 +18,44 @@
         </nav>
     </header>
     <main>
+        <div class="kk">
         <form action="">
             
             <p>Propiertario del vehiculo</p>
-            <div class="container">
-                <input type="text" placeholder="Propiertario del vehiculo" id="Propiertario">
+            <div id="Propiertario" >
+                <input type="text" placeholder="Propiertario del vehiculo" id="Propiertario" required>
             </div>
-            <div>
+            <p>modelo del vehiculo</p>
+            <div id="Modelo">
+                <input type="text" placeholder="Modelo del vehiculo" id="Modelo" required>
+            </div>
+            <div class="container" id="fila2">
                 <div>
-                    <label>Mensaje</label><br>
-                    <textarea name="" id="textarea" cols="30" rows="5"></textarea>
+                    <p>Placa</p>
+                    <input type="text" placeholder="NN/NN/LL" id="placa" required>
+                </div>
+                <div>
+                    <p>Tipo vehiculo</p>
+                    <input type="text" placeholder="Carro Moto" id="Tipo" required>
                 </div>
             </div>
-            <button type="submit"> Enviar</button>
+            <div class="container" id="fila3">
+                <div>
+                    <p>Fecha de Entrada</p>
+                    <input type="date" placeholder="dd/mm/aaaa" id="Fecha" required>
+                </div>
+                <div>
+                    <p>Hora de inicio</p>
+                    <input type="time" placeholder="hh:mm" id="Hora" require>
+                </div>
+                <div>
+                    <p>Cantidad de horas</p>
+                    <input type="number" placeholder="Cantidad" id="Cantidad" required>
+                </div>
+            </div>
+
         </form>
+        </div>
     </main>
     
 </body>
