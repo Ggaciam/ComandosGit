@@ -11,23 +11,22 @@
     <header>
         <nav>
             <ul class="menu">
-                <li class="button"><a href="#" id="Inicio">Inicio</a></li>
+                <li class="button"><a href="./index.html" id="Inicio">Inicio</a></li>
                 <li class="button"><a href="./index2.html" id="informacion">Informacion</a></li>
-                <li class="button lista-r"><a href="#">Contactenos</a></li>
+                <li class="button lista-r"><a href="./contactenos.html">Contactenos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="kk">
-        <form action="">
-            
-            <p>Propiertario del vehiculo</p>
-            <div id="Propiertario" >
-                <input type="text" placeholder="Propiertario del vehiculo" id="Propiertario" required>
+        <form action="" id="form2">
+            <div id="ss">
+            <p>Propietario del vehiculo</p>
+            <div id="Propietario" >
+                <input type="text" placeholder="Propietario del vehiculo" id="propietario" required>
             </div>
             <p>modelo del vehiculo</p>
             <div id="Modelo">
-                <input type="text" placeholder="Modelo del vehiculo" id="Modelo" required>
+                <input type="text" placeholder="Modelo del vehiculo" id="modelo" required>
             </div>
             <div class="container" id="fila2">
                 <div>
@@ -36,27 +35,28 @@
                 </div>
                 <div>
                     <p>Tipo vehiculo</p>
-                    <input type="text" placeholder="Carro Moto" id="Tipo" required>
+                    <input type="text" placeholder="Carro Moto" id="tipo" required>
                 </div>
             </div>
             <div class="container" id="fila3">
                 <div>
                     <p>Fecha de Entrada</p>
-                    <input type="date" placeholder="dd/mm/aaaa" id="Fecha" required>
+                    <input type="date" placeholder="dd/mm/aaaa" id="fecha" required>
                 </div>
                 <div>
                     <p>Hora de inicio</p>
-                    <input type="time" placeholder="hh:mm" id="Hora" require>
+                    <input type="time" placeholder="hh:mm" id="hora" require>
                 </div>
                 <div>
                     <p>Cantidad de horas</p>
-                    <input type="number" placeholder="Cantidad" id="Cantidad" required>
+                    <input type="number" placeholder="Cantidad" id="cantidad" required>
                 </div>
             </div>
-
+            </div>
+            <button type="submit">Enviar</button>
         </form>
-        </div>
     </main>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script/script2.js"></script>
 </body>
 </html>
