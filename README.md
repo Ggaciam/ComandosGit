@@ -31,3 +31,55 @@ ComandosGit
 28. **```<div> </div>```** Etiqueta común utilizada para crear un contenedor genérico
 29. **```<figure> </figure>```** Indica una figura ilustrada como parte del documento HTML5
 30. **```<a> </a>```** Etiqueta utilizada para crear hiperenlaces en el documento HTML
+### 2. consulta 30 estilos de css
+1. **```*```** El asterisco se centrará en cada uno de los elementos en la página.
+2. **```#X```** Prefijar el símbolo numérico a un selector nos permite seleccionar por id.
+3. **```.X```** Éste es un selector de clase class La diferencia entre ids y class es que, con el último, puedes seleccionar varios elementos.
+4. **```X Y```** El siguiente selector más común es el selector descendiente.
+5. **```X```** ¿Qué pasa si quieres seleccionar todos los elementos en una página, de acuerdo a su tipo ( type), en vez de un nombre de id o clase. Mantenlo simple, y usa un selector de tipo.
+6. **```X:visited and X:link```** Usamos la pseudo clase :link para seleccionar todas las etiquetas anchor a las que aún no se les ha dado click.
+7. **``` X + Y```** Este se conoce como un selector adyacente. Seleccionará solamente el elemento que es inmediatamente precedido por el primer elemento.
+8. **```X > Y```** La diferencia entre el estándar X Y y X > Y es que el último sólo seleccionará hijos directos.
+9. **```X ~ Y```** Este elemento “hermano” es similar a X + Y, sin embargo, es menos estricto.
+10. **```X[title]```** Denominado como un selector de atributos, en nuestro ejemplo de arriba, esto sólo seleccionará las etiquetas anchor que tengan un atributo title.
+11. **```X[href="foo"]```** El fragmento de arriba dará estilo a todas las etiquetas anchor que enlacen a http://net.tutsplus.com; estas recibirán nuestro característico color verde. Las demás etiquetas anchor permanecerán sin cambio.
+12. **```X[href*="nettuts"]```** El asterisco designa que el valor a continuación debe aparecer en algún lugar del valor del atributo. De esa manera, esto cubre nettuts.com, net.tutsplus.com, e incluso tutsplus.com.
+13. **```X[href^="http"]```** Si queremos afectar todas las etiquetas anchor que tienen un href que comienza con http, podríamos usar un selector similar al fragmento.
+14. **```X[href$=".jpg"]```** En éste caso, estamos buscando todos los anchor que enlacen a una imagen – o por lo menos a una url que termine con .jpg. Ten en mente que esto seguramente no funcionará para gifs ni pngs.
+15. **```X[data-*="foo"]```** podemos usar un selector de atributos estándar para afectar sólo a esos anchors.
+16. **```X[foo~="bar"]```** El símbolo tilde (~) nos permite afectar un atributo que tenga una lista de valores separados por espacios.
+17. **```X:checked```** Ésta pseudo clase sólo afectará a un elemento de interfaz de usuario que haya sido seleccionado - como un botón de opción (radio button) o casilla de selección (checkbox).
+18. **```X:after```** Éstas simplemente generan contenido alrededor del elemento seleccionado.
+19. **```X:hover```** Usarás más seguido éste selector cuando apliques, por ejemplo, un border-bottom a etiquetas anchor, cuando se pase por encima.
+20. **```X:not(selector)```** La pseudo clase negación es particularmente útil. Digamos que quiero seleccionar todos los divs, excepto por los que tienen un id de container. El fragmento de arriba manejará la tarea perfectamente.
+21. **```X::pseudoElement```** Podemos usar pseudo elementos (designados por ::) para estilizar fragmentos de un elemento, como la primera línea, o la primera letra.
+22. **```X:nth-child(n)```** Podemos incluso usar esto para seleccionar un conjunto variable de hijos. Por ejemplo, podríamos usar li:nth-child(4n) para seleccionar todos los cuartos elementos de una lista.
+23. **```X:nth-last-child(n)```** ¿Y si tuvieras una inmensa lista de elementos en un ul, y solo necesitaras accesar, digamos, del tercer al último elemento? En vez de usar li:nth-child(397), en su lugar podrías usar la pseudo clase nth-last-child.
+24. **```X:nth-of-type(n)```** Si quisieras estilizar sólo la tercera ul, y no tuvieras un id único al cual engancharla, podrías usar la pseudo clase nth-of-type(n).
+25. **```X:nth-last-of-type(n)```** También podemos usar nth-last-of-type para comenzar al final de la lista del selector y partir hacia atrás para afectar al elemento deseado.
+26. **```X:first-child```** Esta pseudo clase estructural nos permite afectar sólo al primer hijo del padre del elemento. Usarás esto frecuentemente para remover bordes de los primeros y últimos elementos de una lista.
+27. **```X:last-child```** Al contrario de first-child, last-child afectará el último elemento del padre el elemento.
+28. **```X:only-child```** Te permite afectar elementos que sean los únicos hijos de su padre.
+29. **```X:only-of-type```** Esta pseudo clase estructural puede ser usada en maneras inteligentes. Afectará elementos que no tienen hermanos dentro de su contenedor padre. Como ejemplo, afectemos a todos los uls, que tengan sólo un elemento de lista.
+30. **```X:first-of-type```** La pseudo clase first-of-type te permite seleccionar los primeros hermanos de su tipo.
+
+
+## 3. consultar que es display block,inline e inline-block
+### -display block
+elemento que ocupa el ancho maximo disponible.de manera predeterminada,el contenido de un elenmento de nivel de bloques es el 100% del ancho de su elemento padre y la altura es determinada por su contenido
+
+### -display inline
+cuando el elemento inline se encuentra entre dos elementos block,el elemento inline se comporta como un block anonimo,de minima anchura
+
+## -display inline-block
+es na conbinacion entre los dos elementos mencionados anteriormente,los elementos con el valor inline-block admiten dimensiones pero todavia son elementos en linea,es decir estaran colocados uno al lado del otro
+
+## 4. mostrar en la consulta anterior de las etiquetas cuales son etiquetas block,inline e inline block
+## -Block
+Las etiquetas de bloque permiten definir bloques de contenido coherente, formado por texto e imágenes. Visualmente, cada bloque se muestra separado del resto de bloques.
+
+## -Inline
+los elementos inline son aquellos cuyo contenido se encuentra en una misma linea, de tal manera que que si colocamos dos o más elementos en linea sin expresar un salto de linea, estos elementos se presentarán uno seguido de otro en una misma linea.
+
+## -Inline block
+Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea y además respetan el ancho, el alto y los márgenes verticales
